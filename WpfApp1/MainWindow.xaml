@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="gray" Foreground="White" ResizeMode="NoResize" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="Ad" HorizontalAlignment="Left" Height="20" Margin="40,69,0,0" TextWrapping="Wrap" Text="Ad:" VerticalAlignment="Top" Width="80"/>
+        <TextBlock x:Name="Soyad" HorizontalAlignment="Left" Height="20" Margin="40,103,0,0" TextWrapping="Wrap" Text="Soyad:" VerticalAlignment="Top" Width="80"/>
+        <TextBlock x:Name="Cinsiyet" HorizontalAlignment="Left" Height="20" Margin="40,135,0,0" TextWrapping="Wrap" Text="Cinsiyet:" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="ad_txt" HorizontalAlignment="Left" Height="20" Margin="125,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txt_soyad" HorizontalAlignment="Left" Height="20" Margin="125,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <ComboBox x:Name="combobox_cinsiyet" HorizontalAlignment="Left" Height="20" Margin="125,135,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ComboBox_SelectionChanged_1"/>
+        <TextBlock x:Name="TC_Kimlik_No"  HorizontalAlignment="Left" Height="20" Margin="40,217,0,0" TextWrapping="Wrap" Text="TC Kimlik No:" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="txt_tc"  PreviewTextInput="Rakamgirisi" MaxLength="11" HorizontalAlignment="Left" Height="20" Margin="125,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" />
+        <Button x:Name="Temizle" Content="Temizle" HorizontalAlignment="Left" Height="40" Margin="45,286,0,0" VerticalAlignment="Top" Width="70" Click="Temizle_Click"/>
+        <Button x:Name="Satın_Al" Content="Satın Al" HorizontalAlignment="Left" Height="40" Margin="155,286,0,0" VerticalAlignment="Top" Width="70" Click="Satın_Al_Click"/>
+        <TextBlock x:Name="Koltuk" HorizontalAlignment="Left" Height="20" Margin="40,174,0,0" TextWrapping="Wrap" Text="Koltuk No:" VerticalAlignment="Top" Width="80"/>
+        <ComboBox x:Name="combobox_koltuk" HorizontalAlignment="Left" Height="20" Margin="125,174,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ComboBox_SelectionChanged_1"/>
+        <TextBlock x:Name="bir" HorizontalAlignment="Left" Margin="483,83,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="30" Foreground="Black" Height="30" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="uc" HorizontalAlignment="Left" Margin="596,83,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="dort" HorizontalAlignment="Left" Margin="483,130,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="30" Foreground="Black" Height="30" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="bes" HorizontalAlignment="Left" Margin="518,131,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="altı" HorizontalAlignment="Left" Margin="596,131,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="sekiz" HorizontalAlignment="Left" Margin="518,177,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="onbir" HorizontalAlignment="Left" Margin="518,227,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="ondort" HorizontalAlignment="Left" Margin="518,273,0,0" TextWrapping="Wrap" Text="14" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="yedi" HorizontalAlignment="Left" Margin="483,177,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="on" HorizontalAlignment="Left" Margin="483,227,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="onuc" HorizontalAlignment="Left" Margin="483,273,0,0" TextWrapping="Wrap" Text="13" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="iki" HorizontalAlignment="Left" Margin="518,83,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="dokuz" HorizontalAlignment="Left" Margin="596,179,0,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="oniki" HorizontalAlignment="Left" Margin="596,227,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <TextBlock x:Name="onbes" HorizontalAlignment="Left" Margin="596,273,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="30" Foreground="Black" Height="29" TextAlignment="Center" TextDecorations="{x:Null}" LineStackingStrategy="MaxHeight" Background="#FF49FF00" LineHeight="12"/>
+        <Label x:Name="baslik" Content="Otobüs Bileti Al" HorizontalAlignment="Center" Height="33" Margin="0,32,0,0" VerticalAlignment="Top" Width="125" Foreground="White" FontSize="16"/>
+    </Grid>
+</Window>
